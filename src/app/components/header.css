@@ -1,0 +1,81 @@
+.div{
+    height: 100svh;
+    background: linear-gradient(to right, rgb(148, 150, 176),rgb(227, 239, 241));
+   
+    
+}
+.header-component{
+    background-color: rgb(244, 253, 255);
+    height: 65px;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.iconOne{
+    position: relative;
+    height:65px;
+    width: 80px;
+    background-color: rgb(222, 234, 243);
+    right: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.logoOfGmail{
+    position: relative;
+    right: 5%;
+}
+.search{
+    background-color: rgb(229, 237, 243);
+    color: gray;
+    height: 45px;
+    width: 600px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.srcChild{
+    position: relative;
+    right: 33%;
+    
+}
+.iconTwo{
+    background-color: rgb(228, 243, 249);
+    height: 43px;
+    width: 120px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    left: 8%;
+}
+.iconThree{
+    position: relative;
+    left:6% ;
+}
+.iconFour{
+    position: relative;
+    left: 4%;
+}
+.iconeFive{
+    position: relative;
+    left: 2%;
+
+}
+/* .right-hader{
+    display: flex;
+    align-items: center;
+    justify-content: space-;
+} */
+
+.img{
+    height: 38px;
+    width: 38px;
+    border-radius: 50px;
+    overflow: hidden;
+}
