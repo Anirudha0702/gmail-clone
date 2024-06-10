@@ -1,14 +1,11 @@
 import Image from "next/image";
-import Search from "@mui/icons-material/Search";
-import Tune from "@mui/icons-material/Tune";
-import HelpOutline from "@mui/icons-material/HelpOutline";
-import Settings from "@mui/icons-material/Settings";
-import Apps from "@mui/icons-material/Apps";
-import ExpandMore from "@mui/icons-material/ExpandMore";
+import { IoSettingsOutline } from "react-icons/io5";
+import { IoIosHelpCircleOutline, IoMdApps} from "react-icons/io";
+import { RiArrowDropDownLine } from "react-icons/ri";
 export default function Header() {
   return (
-    <>
-      <div className="bg-slate-100 flex justify-between w-full h-fit items-center p-3 overflow-hidden">
+    <div className="inline-block w-full">
+      <div className="bg-slate-800 flex justify-between w-full h-fit items-center p-2 overflow-hidden">
         <div className="flex items-center gap-4">
           <Image
             src='https://ssl.gstatic.com/ui/v1/icons/mail/rfr/logo_gmail_lockup_default_1x_r5.png'
@@ -20,33 +17,33 @@ export default function Header() {
         </div>
 
         <div className=" rounded-full p-3 w-1/2  flex gap-2 bg-slate-200">
-          <Search />
+          {/* <Search /> */}
           <input
             type="text"
             placeholder="Search in mail"
             className="bg-inherit w-11/12 outline-none"
           />
-          <Tune />
+          {/* <Tune /> */}
         </div>
 
         <div className="flex justify-between gap-2 items-center ">
           <div className="bg-slate-200 p-3 flex items-center cursor-pointer rounded-full">
             <div className="bg-green-600 rounded-full h-3 w-3 mr-2"></div>
             <span>Active</span>
-            <ExpandMore />
+            <RiArrowDropDownLine />
           </div>
-          <HelpOutline className="cursor-pointer" />
-          <Settings className="cursor-pointer" />
-          <Apps className="cursor-pointer" />
+          <IoIosHelpCircleOutline className="cursor-pointer" />
+          <IoSettingsOutline className="cursor-pointer" />
+          <IoMdApps className="cursor-pointer" />
           <Image
           alt="Profile Picture"
           src='https://lh3.googleusercontent.com/a/ACg8ocK9GKJnigu8vrGL7bcTWVI8Ip4C5xaAL0O69ncUHNTwoCHy6K7Y=s96-c'
-          height={40}
-          width={40}
+          height={30}
+          width={30}
           className="rounded-full"/>
           
         </div>
       </div>
-    </>
+    </div>
   );
 }
